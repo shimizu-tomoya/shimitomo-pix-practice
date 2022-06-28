@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/* base */
+body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+img {
+  width: 100%;
+}
+
+/* global */
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.button {
+  border-radius: 9999px;
+  background-color: orange;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* local */
+.header {
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.header .header-logo {
+  width: 100px;
+  margin-left: 10px;
+  line-height: normal;
+}
+
+.header nav ul {
+  display: flex;
+  line-height: normal;
+}
+
+.header nav li {
+  padding: 5px 8px;
+}
+
+.first-view {
+  background-image: url(../img/first-view.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+.first-view .container {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.first-view .heading img {
+  height: 150px;
+  padding-top: 40px;
+}
+
+.first-view .info {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.first-view .info .pc-none {
+  display: none;
+}
+
+.border-top {
+  border-top: 1px solid;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.first-view .first-view-button {
+  padding: 10px 56px;
+  margin-top: 40px;
+}
+
+@media (max-width:980px) {
+
+  /* global */
+  .wrapper {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  /* local */
+  .header nav {
+    display: none;
+  }
+
+  .header ul {
+    display: block;
+  }
+
+  .menu-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 40px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #fff;
+  }
+
+  .menu-button span,
+  .menu-button span:before,
+  .menu-button span:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: black;
+    position: absolute;
+  }
+
+  .menu-button span:before {
+    bottom: 8px;
+  }
+
+  .menu-button span:after {
+    top: 8px;
+  }
+
+  .first-view .container {
+    background-position: center;
+  }
+
+  .first-view .heading img {
+    height: 100%;
+    padding: 20px;
+  }
+
+  .first-view .info .pc-none {
+    display: block;
+  }
+
+  .first-view .first-view-button {
+    margin-top: 20px;
+  }
+}
