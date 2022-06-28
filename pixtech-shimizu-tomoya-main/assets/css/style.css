@@ -24,6 +24,34 @@ img {
   font-weight: bold;
 }
 
+.common-heading {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.common-heading h2 {
+  font-size: 37px;
+  padding-bottom: 5px;
+}
+
+.common-collection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.common-width {
+  max-width: 310px;
+  height: auto;
+  margin: 15px 10px 15px 10px;
+}
+
+.common-img {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
 /* local */
 .header {
   position: sticky;
@@ -92,12 +120,59 @@ img {
   margin-top: 40px;
 }
 
+/* feature */
+.feature {
+  background-color: #f2faff;
+  padding-bottom: 30px;
+}
+
+.feature .feature-mass img {
+  width: 200px;
+  height: 200px;
+}
+
+.feature h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+
+
+
+/* thought */
+.thought {
+  height: 730px;
+  color: #fff;
+  background-image: url(../img/section2-bg.jpg);
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+.thought .thought-mass {
+  width: 600px;
+  margin: 0 auto 0 auto;
+}
+
+.thought .thought-mass p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media (max-width:980px) {
 
   /* global */
   .wrapper {
     max-width: 980px;
     margin: 0 auto;
+  }
+
+  .common-collection {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .common-width {
+    margin: 0 auto 50px auto;
   }
 
   /* local */
@@ -157,5 +232,24 @@ img {
 
   .first-view .first-view-button {
     margin-top: 20px;
+  }
+
+  /* thought  */
+  .thought {
+    height: auto;
+  }
+
+  .thought .thought-mass {
+    width: auto;
+    height: auto;
+    padding: 10px;
+  }
+
+  .thought .thought-mass p:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .thought .thought-mass .pc-width:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
