@@ -74,7 +74,7 @@ img {
 }
 
 .header nav li~li {
-  margin-left: 3px;
+  margin-left: 5px;
 }
 
 .header nav a {
@@ -93,12 +93,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* フレックスアイテムが主軸に沿って上から下に配置される */
   flex-direction: column;
 }
 
 .first-view .heading img {
   height: 150px;
-  padding-top: 40px;
+  /* img:100%に設定してある画像を小さくするため */
+  padding: 20px;
 }
 
 .first-view .info {
@@ -229,7 +231,7 @@ img {
 
   .first-view .heading img {
     height: 100%;
-    padding-top: 10px;
+    padding: 0;
   }
 
   .first-view .info {
