@@ -26,7 +26,7 @@ img {
 
 .common-heading {
   text-align: center;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .common-heading h2 {
@@ -36,13 +36,12 @@ img {
 .common-collection {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
 }
 
 .common-width {
   max-width: 310px;
   height: auto;
-  margin: 10px;
+  padding: 5px;
 }
 
 .common-image {
@@ -112,15 +111,19 @@ img {
   display: none;
 }
 
-.border-top {
+.first-view .border-top {
   border-top: 1px solid;
   margin-top: 30px;
   padding-top: 30px;
 }
 
 .first-view .first-view-button {
-  padding: 10px 56px;
   margin-top: 40px;
+}
+
+.first-view .first-view-button a {
+  padding: 10px 56px;
+  display: block;
 }
 
 .feature {
@@ -172,7 +175,7 @@ img {
   }
 
   .common-heading h2 {
-    font-size: 37px;
+    font-size: 35px;
   }
 
   .common-collection {
@@ -234,10 +237,6 @@ img {
     padding: 0;
   }
 
-  .first-view .info {
-    margin-top: 50px;
-  }
-
   .first-view .info .pc-none {
     display: block;
   }
@@ -247,12 +246,12 @@ img {
   }
 
   .feature {
-    /* padding: 15px; */
+    padding: 15px;
   }
 
   .thought {
     height: auto;
-    /* padding: 10px; */
+    padding: 10px;
   }
 
   .thought .mass {
