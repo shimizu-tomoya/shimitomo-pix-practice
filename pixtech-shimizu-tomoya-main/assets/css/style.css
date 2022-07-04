@@ -17,7 +17,7 @@ img {
   margin: 0 auto;
 }
 
-.button {
+.common-button {
   border-radius: 9999px;
   background-color: orange;
   color: #fff;
@@ -62,21 +62,21 @@ img {
   height: 60px;
 }
 
-.header .header-logo {
+.header .logo {
   width: 100px;
   line-height: normal;
 }
 
-.header nav ul {
+.header .navigation ul {
   display: flex;
   line-height: normal;
 }
 
-.header nav li~li {
+.header .navigation li~li {
   margin-left: 5px;
 }
 
-.header nav a {
+.header .navigation a {
   padding: 5px;
   display: block;
 }
@@ -111,17 +111,17 @@ img {
   display: none;
 }
 
-.first-view .border-top {
+.first-view .border {
   border-top: 1px solid;
   margin-top: 30px;
   padding-top: 30px;
 }
 
-.first-view .first-view-button {
+.first-view .button {
   margin-top: 40px;
 }
 
-.first-view .first-view-button a {
+.first-view .button a {
   padding: 10px 56px;
   display: block;
 }
@@ -140,7 +140,7 @@ img {
   height: 200px;
 }
 
-.feature h3 {
+.feature .title {
   text-align: center;
   padding-top: 15px;
   line-height: 1;
@@ -198,7 +198,7 @@ img {
   .menu-button {
     position: fixed;
     top: 10px;
-    right: 10px;
+    right: -10px;
     display: flex;
     height: 40px;
     width: 60px;
@@ -241,7 +241,7 @@ img {
     display: block;
   }
 
-  .first-view .first-view-button {
+  .first-view .button {
     margin-top: 20px;
   }
 
