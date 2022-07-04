@@ -142,12 +142,12 @@ img {
 
 .feature .title {
   text-align: center;
-  padding-top: 15px;
+  margin-top: 15px;
   line-height: 1;
 }
 
 .feature .explanation {
-  padding-top: 15px;
+  margin-top: 15px;
 }
 
 .thought {
