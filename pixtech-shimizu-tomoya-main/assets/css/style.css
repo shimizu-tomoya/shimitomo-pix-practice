@@ -107,7 +107,7 @@ img {
   margin-top: 30px;
 }
 
-.first-view .info .pc-none {
+.first-view .info .pc-hidden {
   display: none;
 }
 
@@ -237,7 +237,7 @@ img {
     padding: 0;
   }
 
-  .first-view .info .pc-none {
+  .first-view .info .pc-hidden {
     display: block;
   }
 
@@ -262,7 +262,7 @@ img {
     margin-top: 0;
   }
 
-  .thought .mobile-none~p {
+  .thought .mobile-hidden~p {
     padding-top: 30px;
   }
 
