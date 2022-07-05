@@ -41,7 +41,10 @@ img {
 .common-width {
   max-width: 310px;
   height: auto;
-  padding: 5px;
+}
+
+.common-width~.common-width {
+  margin-left: 15px;
 }
 
 .common-image {
