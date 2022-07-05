@@ -29,7 +29,7 @@ img {
   margin-top: 20px;
 }
 
-.common-heading h2 {
+.common-heading .pc-font {
   font-size: 37px;
 }
 
@@ -174,7 +174,7 @@ img {
     padding: 5px;
   }
 
-  .common-heading h2 {
+  .common-heading .mobile-font {
     font-size: 35px;
   }
 
