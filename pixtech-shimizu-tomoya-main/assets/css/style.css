@@ -8,7 +8,8 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 /* global */
@@ -17,7 +18,7 @@ img {
   margin: 0 auto;
 }
 
-.common-button {
+.button {
   border-radius: 9999px;
   background-color: orange;
   color: #fff;
@@ -76,12 +77,20 @@ img {
 }
 
 .header .navigation li~li {
-  margin-left: 5px;
+  margin-left: 20px;
 }
 
 .header .navigation a {
-  padding: 5px;
   display: block;
+  padding: 8px 0;
+}
+
+.header .navigation .button {
+  padding: 8px 10px;
+}
+
+.header .hamburger-menu {
+  display: none;
 }
 
 .first-view {
@@ -95,36 +104,35 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* フレックスアイテムが主軸に沿って上から下に配置される */
   flex-direction: column;
 }
 
 .first-view .heading img {
   height: 150px;
-  /* img:100%に設定してある画像を小さくするため */
   padding: 20px;
 }
 
 .first-view .info {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .first-view .info .pc-hidden {
   display: none;
 }
 
-.first-view .border {
+.first-view .list {
+  width: 500px;
   border-top: 1px solid;
-  margin-top: 30px;
-  padding-top: 30px;
+  margin-top: 40px;
+  padding-top: 40px;
 }
 
-.first-view .button {
+.first-view .application {
   margin-top: 40px;
 }
 
-.first-view .button a {
+.first-view .application .button {
   padding: 10px 56px;
   display: block;
 }
@@ -190,47 +198,6 @@ img {
   }
 
   /* local */
-  .header nav {
-    display: none;
-  }
-
-  .header ul {
-    display: block;
-  }
-
-  .menu-button {
-    position: fixed;
-    top: 10px;
-    right: -10px;
-    display: flex;
-    height: 40px;
-    width: 60px;
-    justify-content: center;
-    align-items: center;
-    z-index: 90;
-    background-color: #fff;
-  }
-
-  .menu-button span,
-  .menu-button span:before,
-  .menu-button span:after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 25px;
-    border-radius: 3px;
-    background-color: black;
-    position: absolute;
-  }
-
-  .menu-button span:before {
-    bottom: 8px;
-  }
-
-  .menu-button span:after {
-    top: 8px;
-  }
-
   .first-view .container {
     background-position: center;
   }
@@ -244,7 +211,11 @@ img {
     display: block;
   }
 
-  .first-view .button {
+  .first-view .list {
+    width: 305px;
+  }
+
+  .first-view .application {
     margin-top: 20px;
   }
 
@@ -268,6 +239,58 @@ img {
   .thought .mobile-hidden~p {
     padding-top: 30px;
   }
+}
 
+@media(max-width:920px) {
 
+  /* local */
+  .header .navigation {
+    display: none;
+  }
+
+  .header .navigation ul {
+    display: block;
+  }
+
+  .header .hamburger-menu {
+    display: block;
+  }
+
+  .header .hamburger-menu .menu-button {
+    position: fixed;
+    top: 10px;
+    right: -10px;
+    display: flex;
+    height: 40px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header .hamburger-menu .menu-button span,
+  .header .hamburger-menu .menu-button span:before,
+  .header .hamburger-menu .menu-button span:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: black;
+    position: absolute;
+  }
+
+  .header .hamburger-menu .menu-button span:before {
+    bottom: 8px;
+  }
+
+  .header .hamburger-menu .menu-button span:after {
+    top: 8px;
+  }
+}
+
+@media (max-width:305px) {
+
+  .first-view .list {
+    width: auto;
+  }
 }
