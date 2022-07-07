@@ -27,7 +27,6 @@ img {
 
 .common-heading {
   text-align: center;
-  margin-top: 20px;
 }
 
 .common-heading .pc-font {
@@ -39,12 +38,12 @@ img {
   justify-content: center;
 }
 
-.common-width {
+.common-boxes {
   max-width: 310px;
   height: auto;
 }
 
-.common-width~.common-width {
+.common-boxes+.common-boxes {
   margin-left: 15px;
 }
 
@@ -139,7 +138,7 @@ img {
 
 .feature {
   background-color: #f2faff;
-  padding: 30px;
+  padding: 50px;
 }
 
 .feature .mass {
@@ -166,7 +165,7 @@ img {
   color: #fff;
   background-image: url(../img/section2-bg.jpg);
   background-size: cover;
-  padding: 30px;
+  padding: 50px;
 }
 
 .thought .mass {
@@ -174,7 +173,7 @@ img {
   margin: 30px auto 0 auto;
 }
 
-.thought .mass p:not(:last-child) {
+.thought .mass p+p {
   margin-top: 30px;
 }
 
@@ -190,8 +189,12 @@ img {
     display: block;
   }
 
-  .common-width {
-    margin: 0 auto 50px auto;
+  .common-boxes {
+    margin: 40px auto 0 auto;
+  }
+
+  .common-boxes+.common-boxes {
+    margin: 40px auto 0 auto;
   }
 
   /* local */
@@ -222,24 +225,24 @@ img {
   }
 
   .feature {
-    padding: 15px;
+    padding: 30px;
   }
 
   .thought {
     height: auto;
-    padding: 10px;
+    padding: 30px;
   }
 
   .thought .mass {
     width: auto;
   }
 
-  .thought .mass p:not(:last-child) {
-    margin-top: 0;
+  .thought p+p {
+    margin-top: 30px;
   }
 
-  .thought .mobile-hidden~p {
-    padding-top: 30px;
+  .thought .mobile-hidden {
+    margin-top: 0;
   }
 }
 
@@ -287,6 +290,18 @@ img {
 
   .header .hamburger-menu .menu-button span:after {
     top: 8px;
+  }
+}
+
+@media (max-width:370px) {
+
+  .feature {
+    padding: 15px;
+  }
+
+  .thought {
+    height: auto;
+    padding: 15px;
   }
 }
 
