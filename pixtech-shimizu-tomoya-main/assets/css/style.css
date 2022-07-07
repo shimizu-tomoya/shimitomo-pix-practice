@@ -181,9 +181,6 @@ img {
 @media (max-width:980px) {
 
   /* global */
-  .container {
-    padding: 5px;
-  }
 
   .common-heading .mobile-font {
     font-size: 35px;
@@ -198,8 +195,13 @@ img {
   }
 
   /* local */
+  .header .container {
+    padding: 10px;
+  }
+
   .first-view .container {
     background-position: center;
+    padding: 15px;
   }
 
   .first-view .heading img {
