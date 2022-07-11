@@ -29,6 +29,10 @@ img {
   text-align: center;
 }
 
+.common-group {
+  margin-top: 40px;
+}
+
 .common-heading h2 {
   font-size: 36px;
 }
@@ -141,11 +145,7 @@ img {
   padding: 60px;
 }
 
-.feature .group {
-  margin-top: 40px;
-}
-
-.feature .group img {
+.feature .common-group img {
   width: 200px;
   height: 200px;
 }
@@ -168,30 +168,29 @@ img {
   padding: 60px;
 }
 
-.thought .group {
+.thought .common-group {
   width: 600px;
   margin: 40px auto 0 auto;
 }
 
-.thought .group .sentence+.sentence {
+.thought .common-group .sentence+.sentence {
   margin-top: 30px;
 }
 
 
 .curriculum {
-  width: 980px;
-  margin: 0 auto;
+  padding: 60px;
 }
 
-.curriculum .common-subHeading {
+.curriculum h4 {
   font-size: 28px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
 }
 
-.curriculum .common-subHeading::before {
+.curriculum h4::before {
   border-top: 1px solid;
   content: "";
   flex-grow: 1;
@@ -199,7 +198,7 @@ img {
   color: #dcdcdc;
 }
 
-.curriculum .common-subHeading::after {
+.curriculum h4::after {
   border-top: 1px solid;
   content: "";
   flex-grow: 1;
@@ -207,42 +206,41 @@ img {
   color: #dcdcdc;
 }
 
-.curriculum .recommend-group .recommend-collection {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  margin-bottom: 30px;
+/* .feature {
+  background-color: #f2faff;
+  padding: 60px;
 }
 
-.curriculum .recommend-group .recommend-img {
-  width: 31.5%;
+.feature .common-group img {
+  width: 200px;
+  height: 200px;
 }
 
-.curriculum .recommend-group .recommend-img img {
+.feature .title {
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1;
+}
+
+.feature .explanation {
+  margin-top: 32px;
+} */
+
+.curriculum .target .common-group img {
+  width: 310px;
   height: 192px;
 }
 
-.curriculum .recommend-group p {
-  font-size: 23px;
-  text-align: center;
-}
-
-.curriculum .language-group .language-collection {
+.curriculum .common-group .language-collection {
   display: flex;
   justify-content: center;
   justify-content: space-between;
   margin-bottom: 30px;
 }
 
-.curriculum .language-group .language-img {
-  width: 31.5%;
-}
-
-.curriculum .language-group img {
+.curriculum .language .common-group img {
   width: 142px;
   height: 200px;
-  margin-left: 27%;
-  margin-bottom: 20px;
 }
 
 @media (max-width:1100px) {
@@ -311,34 +309,34 @@ img {
     padding: 30px;
   }
 
-  .thought .group {
+  .thought .common-group {
     width: auto;
   }
 
-  .thought .group .sentence+.mobile-hidden {
+  .thought .common-group .sentence+.mobile-hidden {
     margin-top: 0;
   }
 
-  .curriculum .recommend-group .recommend-collection {
+  .curriculum .common-group .recommend-collection {
     display: block;
     justify-content: center;
     justify-content: space-between;
     margin-bottom: 30px;
   }
 
-  .curriculum .recommend-group .recommend-img {
+  .curriculum .common-group .recommend-img {
     width: 310px;
     margin: 0 auto 30px auto;
   }
 
-  .curriculum .language-group .language-collection {
+  .curriculum .common-group .language-collection {
     display: block;
     justify-content: center;
     justify-content: space-between;
     margin-bottom: 30px;
   }
 
-  .curriculum .language-group .language-img {
+  .curriculum .common-group .language-img {
     width: 0;
   }
 
