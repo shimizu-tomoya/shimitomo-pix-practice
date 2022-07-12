@@ -231,6 +231,11 @@ img {
   height: 192px;
 }
 
+.curriculum .target h3 {
+  text-align: center;
+  font-size: 23px;
+}
+
 .curriculum .common-group .language-collection {
   display: flex;
   justify-content: center;
@@ -245,15 +250,15 @@ img {
 
 @media (max-width:1100px) {
 
-  .feature .common-collection {
+  .common-collection {
     display: block;
   }
 
-  .feature .common-boxes {
+  .common-boxes {
     margin: 40px auto 0 auto;
   }
 
-  .feature .common-boxes+.common-boxes {
+  .common-boxes+.common-boxes {
     margin: 40px auto 0 auto;
   }
 }
