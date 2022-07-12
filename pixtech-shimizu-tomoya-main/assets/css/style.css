@@ -273,7 +273,7 @@ img {
 
   .first-view .container {
     background-position: center;
-    padding: 15px;
+    padding: 40px 15px;
   }
 
   .first-view .heading img {
@@ -290,12 +290,12 @@ img {
   }
 
   .feature {
-    padding: 30px;
+    padding: 40px 30px;
   }
 
   .thought {
     height: auto;
-    padding: 30px;
+    padding: 40px 30px;
   }
 
   .thought .group {
@@ -307,7 +307,7 @@ img {
   }
 
   .curriculum {
-    padding: 30px;
+    padding: 40px 30px;
   }
 
   .curriculum h4 {
@@ -388,16 +388,16 @@ img {
 @media (max-width:370px) {
 
   .feature {
-    padding: 15px;
+    padding: 40px 15px;
   }
 
   .thought {
     height: auto;
-    padding: 15px;
+    padding: 40px 15px;
   }
 
   .curriculum {
-    padding: 15px;
+    padding: 40px 15px;
   }
 }
 
