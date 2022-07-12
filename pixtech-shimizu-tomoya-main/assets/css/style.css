@@ -29,10 +29,6 @@ img {
   text-align: center;
 }
 
-.common-group {
-  margin-top: 40px;
-}
-
 .common-heading h2 {
   font-size: 36px;
 }
@@ -40,6 +36,7 @@ img {
 .common-collection {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .common-boxes {
@@ -49,6 +46,11 @@ img {
 
 .common-boxes+.common-boxes {
   margin-left: 25px;
+}
+
+.common-boxes .title {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .common-image {
@@ -145,14 +147,12 @@ img {
   padding: 60px;
 }
 
-.feature .common-group img {
+.feature .common-collection img {
   width: 200px;
   height: 200px;
 }
 
 .feature .title {
-  text-align: center;
-  margin-top: 20px;
   line-height: 1;
 }
 
@@ -168,12 +168,12 @@ img {
   padding: 60px;
 }
 
-.thought .common-group {
+.thought .group {
   width: 600px;
   margin: 40px auto 0 auto;
 }
 
-.thought .common-group .sentence+.sentence {
+.thought .group .sentence+.sentence {
   margin-top: 30px;
 }
 
@@ -184,7 +184,6 @@ img {
 
 .curriculum h4 {
   font-size: 28px;
-  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -206,46 +205,31 @@ img {
   color: #dcdcdc;
 }
 
-/* .feature {
-  background-color: #f2faff;
-  padding: 60px;
+.curriculum .target h4 {
+  margin-top: 40px;
 }
 
-.feature .common-group img {
-  width: 200px;
-  height: 200px;
-}
-
-.feature .title {
-  text-align: center;
-  margin-top: 20px;
-  line-height: 1;
-}
-
-.feature .explanation {
-  margin-top: 32px;
-} */
-
-.curriculum .target .common-group img {
+.curriculum .target img {
   width: 310px;
   height: 192px;
 }
 
-.curriculum .target h3 {
-  text-align: center;
+.curriculum .target .title {
   font-size: 23px;
+  line-height: 1.37;
 }
 
-.curriculum .common-group .language-collection {
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  margin-bottom: 30px;
+.curriculum .language h4 {
+  margin-top: 100px;
 }
 
-.curriculum .language .common-group img {
+.curriculum .language img {
   width: 142px;
   height: 200px;
+}
+
+.curriculum .language .explanation {
+  margin-top: 32px;
 }
 
 @media (max-width:1100px) {
@@ -314,27 +298,27 @@ img {
     padding: 30px;
   }
 
-  .thought .common-group {
+  .thought .group {
     width: auto;
   }
 
-  .thought .common-group .sentence+.mobile-hidden {
+  .thought .group .sentence+.mobile-hidden {
     margin-top: 0;
   }
 
-  .curriculum .common-group .recommend-collection {
+  .curriculum .common-collection .recommend-collection {
     display: block;
     justify-content: center;
     justify-content: space-between;
     margin-bottom: 30px;
   }
 
-  .curriculum .common-group .recommend-img {
+  .curriculum .common-collection .recommend-img {
     width: 310px;
     margin: 0 auto 30px auto;
   }
 
-  .curriculum .common-group .language-collection {
+  .curriculum .common-collection .language-collection {
     display: block;
     justify-content: center;
     justify-content: space-between;
