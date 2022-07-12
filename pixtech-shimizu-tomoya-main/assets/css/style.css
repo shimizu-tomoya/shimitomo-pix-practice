@@ -457,7 +457,14 @@ img {
 @media (max-width:600px) {
 
   .course {
-    padding: 15px;
+    padding: 40px 15px;
+  }
+
+  .course .paid .summary,
+  .course .free .summary {
+    background-size: cover;
+    width: 300px;
+    height: auto;
   }
 
   .course .group {
@@ -474,17 +481,14 @@ img {
 
 @media (max-width:370px) {
 
-  .feature {
+  .feature,
+  .thought,
+  .curriculum {
     padding: 40px 15px;
   }
 
   .thought {
     height: auto;
-    padding: 40px 15px;
-  }
-
-  .curriculum {
-    padding: 40px 15px;
   }
 }
 
