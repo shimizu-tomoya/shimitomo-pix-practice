@@ -210,8 +210,8 @@ img {
 }
 
 .curriculum .target img {
-  width: 310px;
-  height: 192px;
+  max-width: 100%;
+  height: auto;
 }
 
 .curriculum .target .title {
@@ -248,7 +248,7 @@ img {
 
 .course .paid,
 .course .free {
-  width: 480px;
+  max-width: 480px;
 }
 
 .course .background {
@@ -327,13 +327,25 @@ img {
 
   .course .group {
     display: block;
-    width: 480px;
+    max-width: 310px;
     margin: 0 auto;
+  }
+
+  .course .group .summary {
+    background-size: cover;
+    max-width: 310px;
+    height: auto;
   }
 
   .course .paid,
   .course .free {
     margin-top: 40px;
+    max-width: 310px;
+  }
+
+  .course .explanation p,
+  .course .conditions ul {
+    height: auto;
   }
 }
 
@@ -342,17 +354,6 @@ img {
 @media (max-width:980px) {
 
   /* global */
-  .common-collection {
-    display: block;
-  }
-
-  .common-boxes {
-    margin: 40px auto 0 auto;
-  }
-
-  .common-boxes+.common-boxes {
-    margin: 40px auto 0 auto;
-  }
 
   .pc-hidden {
     display: block;
@@ -459,23 +460,6 @@ img {
   .course {
     padding: 40px 15px;
   }
-
-  .course .paid .summary,
-  .course .free .summary {
-    background-size: cover;
-    width: 300px;
-    height: auto;
-  }
-
-  .course .group {
-    width: 320px;
-  }
-
-  .course .paid,
-  .course .free {
-    width: 320px;
-  }
-
 
 }
 
