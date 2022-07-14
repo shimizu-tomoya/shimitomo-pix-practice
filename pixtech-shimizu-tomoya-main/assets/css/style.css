@@ -343,7 +343,8 @@ img {
   .course .group .summary {
     background-size: cover;
     max-width: 310px;
-    height: auto;
+    height: 150px;
+    padding: 10px;
   }
 
   .course .summary h5 {
