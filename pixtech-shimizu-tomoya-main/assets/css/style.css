@@ -346,6 +346,18 @@ img {
     height: auto;
   }
 
+  .course .summary h5 {
+    font-size: 18px;
+  }
+
+  .course .summary p {
+    font-size: 14px;
+  }
+
+  .course .summary span {
+    font-size: 18px;
+  }
+
   .course .paid,
   .course .free {
     margin-top: 40px;
