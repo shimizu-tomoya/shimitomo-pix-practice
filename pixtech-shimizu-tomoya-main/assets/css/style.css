@@ -82,20 +82,24 @@ img {
 
 .header .navigation ul {
   display: flex;
-  line-height: normal;
+}
+
+.header .navigation li {
+  display: flex;
+  align-items: center;
+}
+
+.header .navigation a {
+  line-height: 1;
 }
 
 .header .navigation li~li {
   margin-left: 20px;
 }
 
-.header .navigation a {
-  display: block;
-  padding: 8px 0;
-}
-
 .header .navigation .button {
   padding: 8px 10px;
+  display: block;
 }
 
 .header .hamburger-menu {
@@ -117,8 +121,8 @@ img {
 }
 
 .first-view .heading img {
-  height: 150px;
-  padding: 20px;
+  width: auto;
+  max-height: 100px;
 }
 
 .first-view .info {
@@ -126,20 +130,25 @@ img {
   margin-top: 40px;
 }
 
-.first-view .list {
+.first-view .info .pc-hidden {
+  display: none;
+}
+
+.first-view .conditions {
   width: 500px;
   border-top: 1px solid;
   margin-top: 40px;
   padding-top: 40px;
 }
 
-.first-view .application {
+.first-view .button-wrap {
   margin-top: 40px;
 }
 
-.first-view .application .button {
+.first-view .button-wrap .button {
   padding: 10px 56px;
   display: block;
+  line-height: 1;
 }
 
 .feature {
@@ -374,7 +383,7 @@ img {
     padding: 0;
   }
 
-  .first-view .list {
+  .first-view .conditions {
     width: 305px;
   }
 
@@ -478,7 +487,7 @@ img {
 
 @media (max-width:305px) {
 
-  .first-view .list {
+  .first-view .conditions {
     width: auto;
   }
 }
