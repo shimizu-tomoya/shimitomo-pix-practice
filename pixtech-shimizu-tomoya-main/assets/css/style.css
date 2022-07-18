@@ -320,6 +320,48 @@ img {
   height: 255px;
 }
 
+.teacher .wrapper{
+  display: flex;
+}
+
+.teacher .introduction {
+  line-height: normal;
+}
+
+.teacher .introduction .name{
+  display: flex;
+}
+
+.teacher .introduction .japanese-name{
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.teacher .introduction .english-name{
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.teacher .explanation{
+  border-top: 1px solid #dcdcdc;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.teacher .explanation p{
+  width: 696px;
+  height: 150px;
+}
+
+.teacher .teacher-image{
+  margin-left: 34px;
+}
+
+.teacher .teacher-image img{
+  width: 250px;
+  height: 250px;
+}
 @media (max-width:1100px) {
 
   .common-collection {
@@ -369,6 +411,7 @@ img {
   .course .conditions ul {
     height: auto;
   }
+
 }
 
 
