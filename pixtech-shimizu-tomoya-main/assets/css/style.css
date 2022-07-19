@@ -110,35 +110,36 @@ img {
   background-image: url(../img/first-view.jpg);
   background-size: cover;
   color: #fff;
+  text-align: center;
 }
 
 .first-view .container {
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  max-width: 662px;
+  margin: 0 auto;
+  padding: 60px 0 120px;
 }
 
-.first-view .heading img {
-  width: auto;
-  max-height: 100px;
+.first-view h1 {
+  max-width: 662px;
 }
 
-.first-view .info {
-  text-align: center;
+.first-view h1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.first-view .text {
   margin-top: 40px;
-}
-
-.first-view .info .pc-hidden {
-  display: none;
 }
 
 .first-view .conditions {
-  width: 500px;
-  border-top: 1px solid;
   margin-top: 40px;
   padding-top: 40px;
+  border-top: 1px solid;
+}
+
+.first-view .pc-hidden {
+  display: none;
 }
 
 .first-view .button-wrap {
@@ -147,13 +148,15 @@ img {
 
 .first-view .button-wrap .button {
   padding: 10px 56px;
-  display: block;
   line-height: 1;
 }
 
 .feature {
   background-color: #f2faff;
-  padding: 60px;
+}
+
+.feature .container {
+  padding: 60px 0 70px;
 }
 
 .feature .common-collection img {
@@ -170,11 +173,15 @@ img {
 }
 
 .thought {
-  height: 730px;
   color: #fff;
   background-image: url(../img/section2-bg.jpg);
   background-size: cover;
-  padding: 60px;
+}
+
+.thought .container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 0 70px;
 }
 
 .thought .group {
@@ -187,8 +194,8 @@ img {
 }
 
 
-.curriculum {
-  padding: 60px;
+.curriculum .container {
+  padding: 60px 0 70px;
 }
 
 .curriculum h4 {
@@ -246,7 +253,10 @@ img {
 .course {
   background-image: url(../img/section4-bg.jpg);
   background-size: cover;
-  padding: 60px;
+}
+
+.course .container {
+  padding: 60px 0 70px;
 }
 
 .course .group {
@@ -320,7 +330,12 @@ img {
   height: 255px;
 }
 
-.teacher .wrapper{
+
+.teacher .container {
+  padding: 60px 0 70px;
+}
+
+.teacher .wrapper {
   display: flex;
 }
 
@@ -328,40 +343,45 @@ img {
   line-height: normal;
 }
 
-.teacher .introduction .name{
+.teacher .position {
+  margin-top: 40px;
+}
+
+.teacher .introduction .name {
   display: flex;
 }
 
-.teacher .introduction .japanese-name{
+.teacher .introduction .japanese-name {
   font-size: 23px;
   font-weight: bold;
 }
 
-.teacher .introduction .english-name{
+.teacher .introduction .english-name {
   margin-left: 20px;
   display: flex;
   align-items: center;
 }
 
-.teacher .explanation{
+.teacher .explanation {
   border-top: 1px solid #dcdcdc;
   padding-top: 10px;
   margin-top: 10px;
 }
 
-.teacher .explanation p{
+.teacher .explanation p {
   width: 696px;
   height: 150px;
 }
 
-.teacher .teacher-image{
+.teacher .teacher-image {
   margin-left: 34px;
 }
 
-.teacher .teacher-image img{
+.teacher .teacher-image img {
   width: 250px;
   height: 250px;
 }
+
 @media (max-width:1100px) {
 
   .common-collection {
@@ -419,7 +439,6 @@ img {
 @media (max-width:980px) {
 
   /* global */
-
   .pc-hidden {
     display: block;
   }
@@ -429,22 +448,8 @@ img {
     padding: 10px;
   }
 
-  .first-view .container {
+  .first-view {
     background-position: center;
-    padding: 40px 15px;
-  }
-
-  .first-view .heading img {
-    height: 100%;
-    padding: 0;
-  }
-
-  .first-view .conditions {
-    width: 305px;
-  }
-
-  .first-view .application {
-    margin-top: 20px;
   }
 
   .feature {
@@ -470,6 +475,20 @@ img {
 
   .curriculum h4 {
     font-size: 23px;
+  }
+
+  .teacher .container {
+    max-width: 696px;
+    margin: 0 auto;
+  }
+
+  .teacher .explanation p {
+    width: auto;
+    height: auto;
+  }
+
+  .teacher .mobile-hidden {
+    display: none;
   }
 }
 
@@ -520,6 +539,29 @@ img {
   }
 }
 
+@media (max-width:696px) {
+
+  .teacher {
+    padding: 0 15px;
+  }
+
+  .teacher .container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:662px) {
+
+  .first-view {
+    padding: 0 10px;
+  }
+
+  .first-view .pc-hidden {
+    display: block;
+  }
+}
+
 @media (max-width:600px) {
 
   .course {
@@ -538,12 +580,5 @@ img {
 
   .thought {
     height: auto;
-  }
-}
-
-@media (max-width:305px) {
-
-  .first-view .conditions {
-    width: auto;
   }
 }
