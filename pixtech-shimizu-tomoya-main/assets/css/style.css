@@ -210,7 +210,7 @@ img {
   content: "";
   flex-grow: 1;
   margin-right: 1em;
-  color: #dcdcdc;
+  color: #eaeaea;
 }
 
 .curriculum h4::after {
@@ -218,7 +218,7 @@ img {
   content: "";
   flex-grow: 1;
   margin-left: 1em;
-  color: #dcdcdc;
+  color: #eaeaea;
 }
 
 .curriculum .target h4 {
@@ -247,7 +247,7 @@ img {
 .curriculum .language .explanation {
   margin-top: 32px;
   padding-top: 10px;
-  border-top: 1px solid #dcdcdc;
+  border-top: 1px solid #eaeaea;
 }
 
 .course {
@@ -306,7 +306,7 @@ img {
 
 .course .conditions {
   margin-top: 20px;
-  border-top: 1px solid #dcdcdc;
+  border-top: 1px solid #eaeaea;
 }
 
 .course .conditions p {
@@ -363,7 +363,7 @@ img {
 }
 
 .teacher .explanation {
-  border-top: 1px solid #dcdcdc;
+  border-top: 1px solid #eaeaea;
   padding-top: 10px;
   margin-top: 10px;
 }
@@ -380,6 +380,46 @@ img {
 .teacher .teacher-image img {
   width: 250px;
   height: 250px;
+}
+
+.inquiry {
+  background-color: #f4f4f4;
+}
+
+.inquiry .container {
+  padding: 60px 0 70px;
+}
+
+.inquiry .wrapper {
+  background-color: #fff;
+  margin-top: 40px;
+  padding: 20px 20px 66px;
+}
+
+.inquiry .group+.group {
+  margin-top: 86px;
+}
+
+.inquiry span {
+  font-weight: bold;
+}
+
+.inquiry .question {
+  font-weight: bold;
+}
+
+.inquiry .question span {
+  color: blue;
+}
+
+.inquiry .answer span {
+  color: red;
+}
+
+.inquiry .answer {
+  border-top: 1px solid #eaeaea;
+  margin-top: 10px;
+  padding-top: 10px;
 }
 
 @media (max-width:1100px) {
@@ -490,6 +530,11 @@ img {
   .teacher .mobile-hidden {
     display: none;
   }
+
+  .inquiry .container {
+    max-width: 696px;
+    margin: 0 auto;
+  }
 }
 
 @media(max-width:920px) {
@@ -549,6 +594,19 @@ img {
   .teacher .container {
     max-width: 320px;
     margin: 0 auto;
+  }
+
+  .inquiry {
+    padding: 0;
+  }
+
+  .inquiry .container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .inquiry .wrapper {
+    padding: 20px 15px 66px;
   }
 }
 
