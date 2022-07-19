@@ -384,6 +384,7 @@ img {
 
 @media (max-width:1100px) {
 
+  /* global */
   .common-collection {
     display: block;
   }
@@ -394,6 +395,13 @@ img {
 
   .common-boxes+.common-boxes {
     margin: 40px auto 0 auto;
+  }
+
+  /* local */
+  .feature .container,
+  .curriculum .container,
+  .course .container {
+    max-width: 320px;
   }
 
   .course .group {
@@ -452,13 +460,8 @@ img {
     background-position: center;
   }
 
-  .feature {
-    padding: 40px 30px;
-  }
-
   .thought {
     height: auto;
-    padding: 40px 30px;
   }
 
   .thought .group {
@@ -469,9 +472,6 @@ img {
     margin-top: 0;
   }
 
-  .curriculum {
-    padding: 40px 30px;
-  }
 
   .curriculum h4 {
     font-size: 23px;
@@ -541,6 +541,7 @@ img {
 
 @media (max-width:696px) {
 
+  /* local */
   .teacher {
     padding: 0 15px;
   }
@@ -554,7 +555,7 @@ img {
 @media (max-width:662px) {
 
   .first-view {
-    padding: 0 10px;
+    padding: 0 15px;
   }
 
   .first-view .pc-hidden {
@@ -564,18 +565,20 @@ img {
 
 @media (max-width:600px) {
 
+  /* local */
   .course {
-    padding: 40px 15px;
+    padding: 0 15px;
   }
 
 }
 
 @media (max-width:370px) {
 
+  /* local */
   .feature,
   .thought,
   .curriculum {
-    padding: 40px 15px;
+    padding: 0 15px;
   }
 
   .thought {
