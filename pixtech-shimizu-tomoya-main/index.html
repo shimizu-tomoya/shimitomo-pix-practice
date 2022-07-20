@@ -293,33 +293,70 @@
           <h2>説明会へ申し込む</h2>
           <p>憧れのプログラマーを目指す第一歩</p>
         </div>
-        <div class="group">
-          <div class="name">
-            <label for="name">お名前<span class="required">必須</span></label>
-            <input id="name" type="text" placeholder="例：山田 太郎">
-          </div>
-          <div class="maila">
-            <label for="mail">メールアドレス<span class="required">必須</span></label>
-            <input id="mail" type="email" placeholder="例： xxxx@xxxx.xxx.xx">
-          </div>
-          <div class="firstChoice">
-            <label for="firstChoice">第一希望日<span class="required">必須</span></label>
-            <div class="model">
-              <p></p>
-              <input id="firstChoice" type="date" placeholder="例： - - -">
+        <form action="">
+          <div class="group">
+            <div class="name border">
+              <label for="name">お名前<span class="required">必須</span></label>
+              <input id="name" type="text" placeholder="例：山田 太郎">
+            </div>
+            <div class="maila border">
+              <label for="mail">メールアドレス<span class="required">必須</span></label>
+              <input id="mail" type="email" placeholder="例： xxxx@xxxx.xxx.xx">
+            </div>
+            <div class="choice border">
+              <label for="firstChoice">第一希望日<span class="required">必須</span></label>
+              <div class="preferredDate">
+                <input id="firstChoice" type="date" required>
+                <select name="time" required>
+                  <option value="" selected hidden>- - -</option>
+                  <option>10:00~11:00</option>
+                  <option>13:00~14:00</option>
+                  <option>16:00~17:00</option>
+                </select>
+              </div>
+            </div>
+            <div class="choice border">
+              <label for="secondChoice">第二希望日</label>
+              <div class="preferredDate">
+                <input id="secondChoice" type="date">
+                <select name="time">
+                  <option value="" selected hidden>- - -</option>
+                  <option>10:00~11:00</option>
+                  <option>13:00~14:00</option>
+                  <option>16:00~17:00</option>
+                </select>
+              </div>
+            </div>
+            <div class="choice border">
+              <label for="thirdChoice">第二希望日</label>
+              <div class="preferredDate">
+                <input id="thirdChoice" type="date">
+                <select name="time">
+                  <option value="" selected hidden>- - -</option>
+                  <option>10:00~11:00</option>
+                  <option>13:00~14:00</option>
+                  <option>16:00~17:00</option>
+                </select>
+              </div>
             </div>
           </div>
-          <div class="secondChoice">
-            <label for="secondChoice">第二希望日</label>
-            <div class="model">
-              <p></p>
-              <input id="secondChoice" type="date" placeholder="例： - - -">
-            </div>
+          <div class="checkbox">
+            <input type="checkbox">
+            <label for="">上記の内容でよろしければ、チェックを入れてください。</label>
           </div>
-        </div>
+          <div class="button-wrap">
+            <a class="button" href="">
+              送信する
+            </a>
+          </div>
+        </form>
         <div class="sns">
           <p>ご質問、ご相談の方はLINE@で簡単お問い合わせ</p>
-          <p>LINE@ でのお問い合わせはこちら</p>
+          <div class="line">
+            <a href="">
+              <span class="size">LINE@</span> <span class="flex">でのお問い合わせはこちら</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -342,6 +379,15 @@
           <a class="button" href="">
             PAGE TOP
           </a>
+        </div>
+      </div>
+      <div class="privacy-wrap">
+        <div class="privacy-inner">
+          <div class="privacyPolicy">
+            <p>プライバシーポリシー</p>
+            <p>特定商取引法に基づく表記</p>
+          </div>
+          <p class="copyright">© 2018 PIXEL HEARTS.inc</p>
         </div>
       </div>
     </footer>
