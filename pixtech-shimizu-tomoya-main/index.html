@@ -39,7 +39,7 @@
     <section id="first-view" class="first-view">
       <div class="container">
         <h1 class="heading">
-          <img src="assets/img/h1.png" alt="タイトル">
+          <img src="assets/img/h1.png" alt="完全現場主義 未経験から一人で育つエンジニアへ">
         </h1>
         <p class="text">
           少人数制での、個人個人の<br class="pc-hidden">確実なスキルアップの徹底。<br>
@@ -307,36 +307,42 @@
               <label for="firstChoice">第一希望日<span class="required">必須</span></label>
               <div class="preferredDate">
                 <input id="firstChoice" type="date" required>
-                <select name="time" required>
-                  <option value="" selected hidden>- - -</option>
-                  <option>10:00~11:00</option>
-                  <option>13:00~14:00</option>
-                  <option>16:00~17:00</option>
-                </select>
+                <div class="time">
+                  <select name="time" required>
+                    <option value="" selected hidden>- - -</option>
+                    <option>10:00~11:00</option>
+                    <option>13:00~14:00</option>
+                    <option>16:00~17:00</option>
+                  </select>
+                </div>
               </div>
             </div>
             <div class="choice border">
               <label for="secondChoice">第二希望日</label>
               <div class="preferredDate">
                 <input id="secondChoice" type="date">
-                <select name="time">
-                  <option value="" selected hidden>- - -</option>
-                  <option>10:00~11:00</option>
-                  <option>13:00~14:00</option>
-                  <option>16:00~17:00</option>
-                </select>
+                <div class="time">
+                  <select name="time">
+                    <option value="" selected hidden>- - -</option>
+                    <option>10:00~11:00</option>
+                    <option>13:00~14:00</option>
+                    <option>16:00~17:00</option>
+                  </select>
+                </div>
               </div>
             </div>
             <div class="choice border">
               <label for="thirdChoice">第二希望日</label>
               <div class="preferredDate">
                 <input id="thirdChoice" type="date">
-                <select name="time">
-                  <option value="" selected hidden>- - -</option>
-                  <option>10:00~11:00</option>
-                  <option>13:00~14:00</option>
-                  <option>16:00~17:00</option>
-                </select>
+                <div class="time">
+                  <select name="time">
+                    <option value="" selected hidden>- - -</option>
+                    <option>10:00~11:00</option>
+                    <option>13:00~14:00</option>
+                    <option>16:00~17:00</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
@@ -352,8 +358,8 @@
         </form>
         <div class="sns">
           <p>ご質問、ご相談の方はLINE@で簡単お問い合わせ</p>
-          <div class="line">
-            <a href="">
+          <div class="button-wrap">
+            <a class="button" href="">
               <span class="size">LINE@</span> <span class="flex">でのお問い合わせはこちら</span>
             </a>
           </div>
@@ -377,7 +383,7 @@
         </div>
         <div class="button-wrap">
           <a class="button" href="">
-            PAGE TOP
+            PAGE TOP　
           </a>
         </div>
       </div>
